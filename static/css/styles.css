@@ -215,7 +215,6 @@ ul {
   background-origin: border-box;
   background-repeat: no-repeat;
 
-  /*Irrelevant code*/
   width: 60%;
   height: 60%;
   box-sizing: border-box;
@@ -341,6 +340,7 @@ footer {
 #social {
   display: flex;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 footer ul {
@@ -403,5 +403,15 @@ footer ul li::before {
 
   .navbar {
     flex-wrap: nowrap;
+  }
+
+  #footer-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10%;
   }
 }
