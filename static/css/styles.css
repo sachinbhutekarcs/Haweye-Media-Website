@@ -1,0 +1,407 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* Texts, Headings & Buttons */
+h1 {
+  font-family: sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+span {
+  font-family: monospace;
+  color: yellow;
+  font-size: 2rem;
+}
+
+button {
+  font-size: 1rem;
+  background: yellow;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Icons */
+.fa-phone-alt,
+.fa-search,
+.fa-map-marker-alt,
+.fa-envelope {
+  color: yellow;
+}
+
+i {
+  color: grey;
+}
+
+/* Navbar */
+
+ul {
+  padding-inline: 10%;
+}
+
+#navbar,
+.navbar,
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+#header-img {
+  width: 60%;
+  padding-left: 30%;
+}
+
+#media-icons a {
+  color: white;
+  white-space: nowrap;
+}
+.collapse {
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+}
+#page-nav-links a {
+  color: black;
+}
+#page-nav-links {
+  text-align: right;
+  display: flex;
+  min-width: 100%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  justify-content: space-evenly;
+  padding: 2% 2% 0 0;
+}
+
+#media-icons {
+  gap: 30px;
+  padding-right: 10%;
+  background: -webkit-linear-gradient(30deg, white 4%, black 4%);
+  display: flex;
+  flex-direction: row !important;
+  align-self: flex-end;
+}
+
+#page-nav-links a:hover {
+  background: yellow;
+}
+
+/* Carousel */
+
+#carousel {
+  height: 50%;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 1;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.trickcenter {
+  padding-inline: 25%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Demo Video */
+#video {
+  display: flex;
+  padding: 10%;
+  gap: 5%;
+}
+#video p {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+#video div:first-child {
+  border: black solid 2px;
+}
+#video div:last-child {
+  padding-inline: 10%;
+  text-align: left;
+}
+
+#video iframe:first-child {
+  border: solid white 10px;
+  position: relative;
+  left: 30px;
+  top: 30px;
+  padding: 0;
+}
+
+#video img:first-child {
+  position: relative;
+  top: 10px;
+}
+
+/* Video Cards */
+#cards {
+  display: flex;
+  padding: 10%;
+  overflow-x: hidden;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 0;
+}
+
+.card-items > button {
+  display: block;
+  width: 100%;
+}
+
+#cards > iframe {
+  border: none;
+}
+
+/* Services */
+#services {
+  padding: 5% 10%;
+  background-image: url(https://ak.picdn.net/shutterstock/videos/13649180/thumb/1.jpg);
+  background-size: cover;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  max-width: 50%;
+}
+
+/* Our Projects */
+#projects {
+  padding: 5% 10%;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.project-name {
+  --b: 5px; /* thickness of the border */
+  --c: white; /* color of the border */
+  --w: 20px; /* width of border */
+
+  border: var(--b) solid transparent; /* space for the border */
+  background: linear-gradient(var(--c), var(--c)) top left,
+    linear-gradient(var(--c), var(--c)) top left,
+    linear-gradient(var(--c), var(--c)) bottom left,
+    linear-gradient(var(--c), var(--c)) bottom left,
+    linear-gradient(var(--c), var(--c)) top right,
+    linear-gradient(var(--c), var(--c)) top right,
+    linear-gradient(var(--c), var(--c)) bottom right,
+    linear-gradient(var(--c), var(--c)) bottom right;
+  background-size: var(--b) var(--w), var(--w) var(--b);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+
+  /*Irrelevant code*/
+  width: 60%;
+  height: 60%;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 90px;
+  color: white;
+  position: relative;
+  bottom: 70%;
+}
+
+.project-name:hover {
+  background: yellow;
+  color: black;
+  align-items: center;
+}
+
+.project-grid iframe:hover {
+  color: yellow;
+}
+.grid-items {
+  background: yellow;
+  padding: 3% 10%;
+}
+
+.grid img {
+  width: 50px;
+}
+
+.grid-items:hover {
+  background: white;
+  color: black;
+}
+
+/* Our Drones */
+#our-drones {
+  padding: 5% 10% 10%;
+  text-align: center;
+}
+
+.drone {
+  border: solid lightgrey 5px;
+}
+
+#drone-img-1,
+#drone-img-2,
+#drone-img-3 {
+  width: 200px;
+  height: 150px;
+}
+
+.drones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#mavic-drone {
+  color: gray;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+#phanthom-drone {
+  color: gray;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  top: 150px;
+}
+#inspire-drone {
+  color: gray;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+  right: 100px;
+}
+
+/* Career */
+#career-form {
+  background-image: url(https://www.reddotforum.com/wp-content/uploads/2018/05/RDF-filter-banner-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.contact-form {
+  background: yellow;
+  padding: 5%;
+  position: relative;
+  top: 50px;
+  left: 60%;
+  max-width: 30%;
+  z-index: 1;
+}
+
+.contact-form button {
+  background: black;
+  color: yellow;
+}
+
+/* Footer */
+footer {
+  color: lightgray;
+  background: #181b1f;
+  padding: 5% 10%;
+}
+
+#footer-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-item a,
+.footer-bottom a {
+  color: lightgray;
+}
+
+#social {
+  display: flex;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li::before {
+  content: "\2022";
+  color: yellow;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  color: lightgray;
+  background: #353935;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #mavic-drone,
+  #inspire-drone,
+  #phanthom-drone {
+    position: static;
+  }
+
+  #page-nav-links {
+    flex-direction: row;
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  #media-icons {
+    background: black;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+}
